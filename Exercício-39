@@ -9,7 +9,7 @@ for pergunta1 in range(10):
    
     
 codigo_alto = altura.index(max(altura))
-codigo_baixo = altura.index(min(altura))     #Função index utilizada para pegar o codigo dos elemetos da lista codigos_clientes
+codigo_baixo = altura.index(min(altura))     
 
 print(f'Codigo do aluno mais alto:{numero_alunos[codigo_alto]}|Altura:{max(altura)}')
 print(f'Codigo do aluno mais baixo:{numero_alunos[codigo_baixo]}|Altura:{min(altura)}')
