@@ -30,7 +30,7 @@ for i in range(5):
 maior_num_veiculos = numero_veiculos.index(max(numero_veiculos))
 menor_num_veiculos = numero_veiculos.index(min(numero_veiculos))
 maior_indice_acidentes = numero_acidentes.index(max(numero_acidentes))
-menor_indice_acidentes = numero_acidentes.index(min(numero_acidentes))                          #Função index utilizada para pegar o codigo dos elemetos da lista codigos_clientes
+menor_indice_acidentes = numero_acidentes.index(min(numero_acidentes))                          
 
 print('~' * 50)
 print(f'O maior indice de acidente é {max(numero_acidentes)} da cidade:{codigo_cidade[maior_indice_acidentes]}')
