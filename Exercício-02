@@ -1,0 +1,10 @@
+login = input('Qual o nome de usuário: ')
+senha = input('Qual a sua senha: ')
+
+while login == senha :
+    print('ERRO seu login não pode ser igual a senha')
+    login = input('Qual o nome de usuário: ')
+    senha = input('Qual a sua senha: ')
+    
+else:
+    print(f'{login} está cadastrado.')

@@ -1,0 +1,12 @@
+lista=[]
+
+for num in range(5):
+    numeros=(int(input('Digite um número: ')))
+    while numeros >= 1000:
+        numeros=(int(input('Digite um número entre 0 a 1000!!: ')))        
+    else:
+        lista.append(numeros)
+        
+        
+print(f'Maior valor: {max(lista)}\nMenor valor: {min(lista)}\nSoma dos valores: {sum(lista)} ')
+    

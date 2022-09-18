@@ -1,0 +1,11 @@
+preco = float(input('Qual o preço do pão:'))
+paes = int(input('Quantos pães:'))
+
+while paes > 50:
+    paes = int(input('Quantos pães:'))
+    
+count = 1
+
+for i in range(paes):
+    print(f'N°{count} = R${preco * count}')
+    count += 1

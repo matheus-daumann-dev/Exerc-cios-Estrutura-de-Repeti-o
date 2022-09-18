@@ -1,0 +1,14 @@
+numero = int(input('Digite um número inteiro:'))
+lista=[]
+print(f'Números primos de 1 a {numero}:')
+
+
+for i in range(numero):    
+    if i > 1: 
+        for j in range(2,i):
+            if (i % j == 0) :
+                break
+        else:
+            lista.append(i)
+            
+print(lista)

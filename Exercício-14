@@ -1,0 +1,18 @@
+numeros = 0
+par = 0
+impar = 0
+
+while numeros <= 9:
+    pergunta = int(input('Digite um numero:'))
+    numeros +=1
+    
+    if pergunta % 2 == 0 :
+        pergunta = par
+        par +=1
+        
+    else:
+        pergunta = impar
+        impar +=1
+
+
+print(f'Você digitou {par} números pares e {impar} números impares.')

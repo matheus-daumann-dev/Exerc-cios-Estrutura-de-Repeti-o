@@ -1,0 +1,16 @@
+while True:
+
+    numeros = int(input('Digite um numero que deseja fazer a multiplicação: '))
+    inicio = int(input('Digite um número para iniciar a tabuada: '))
+    termino = int(input('Digite um número para terminar a tabuada: '))
+    
+    print(f'Vou montar a tabuada de {numeros} começando em {inicio} e terminando em {termino}:')
+    
+    for num in range(inicio,termino+1):
+        if inicio < termino:
+            print(f'{numeros}X{num} = {numeros*num}')
+            
+        else:
+            inicio > termino
+            continue
+

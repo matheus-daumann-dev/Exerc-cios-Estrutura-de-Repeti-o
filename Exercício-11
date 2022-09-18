@@ -1,0 +1,19 @@
+numero1=int(input('Digite um numero inteiro:'))
+numero2=int(input('Digite um numero inteiro:'))
+soma = 0
+
+if numero1 > numero2:
+    for num in range(numero2+1,numero1):
+        soma = (soma + num)
+        print(num,end=',')
+    print(f'A soma desses numero é {soma}')
+        
+
+elif numero1 < numero2:
+    for num in range(numero1+1,numero2):
+        soma = soma + num
+        print(num,end=',')
+    print(f'A soma desses numero é {soma}')
+               
+else:
+    print(f'Os numeros são iguais')

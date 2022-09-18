@@ -1,0 +1,11 @@
+quantas_notas = int(input('Quantas notas vai digitar?:'))
+count = 0
+notas = []
+
+while count < quantas_notas:
+    notas.append(float(input('Digite uma nota:')))
+    count +=1
+
+soma = sum(notas) / quantas_notas 
+    
+print(f'Notas: {notas}\nMédia: [{soma}]')

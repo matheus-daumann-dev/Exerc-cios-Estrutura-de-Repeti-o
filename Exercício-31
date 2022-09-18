@@ -1,0 +1,29 @@
+while True:
+    precos = []
+    num_produtos = 1
+    pergunta = True
+    count = 0
+
+    while pergunta != 0:
+        print(f'N°{num_produtos} - ')
+        pergunta = float(input('Digite o preço do produto:'))
+        num_produtos +=1
+        precos.append(pergunta)
+        total_compra = sum(precos)
+        
+    
+    dinheiro = float(input('Digite quanto vai pagar:'))
+    while dinheiro < total_compra:
+        dinheiro = float(input('Digite quanto vai pagar [Digite um valor maior ou igual que o da compra]:'))
+        
+    print('Lojas Tabajara')
+    num_produtos = 1
+    for i in range(len(precos)):
+        print(f'Produto N°{num_produtos} = R${precos[count]}')
+        count += 1
+        num_produtos +=1
+    print(f'Total:R${total_compra}\nDinheiro:R${dinheiro}\nTroco:R${dinheiro - total_compra}')
+    break
+
+
+    

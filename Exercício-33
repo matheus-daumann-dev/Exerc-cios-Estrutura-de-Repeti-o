@@ -1,0 +1,10 @@
+quantidade = int(input('Digite a quantidade de temperaturas para fazer o conjunto:'))
+temperaturas = []
+
+
+for i in range(quantidade):
+    pergunta = float(input('Digite a temperatura:'))
+    temperaturas.append(pergunta)
+    media = sum(temperaturas) / quantidade
+
+print(f'Menor temperatura: {min(temperaturas)}\nMaior temperatura: {max(temperaturas)}\nMédia temperatura: {media}')

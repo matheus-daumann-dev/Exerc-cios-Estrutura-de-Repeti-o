@@ -1,0 +1,12 @@
+turmas = int(input('Quantas turmas?:'))
+quantidade_alunos = []
+
+
+for i in range(turmas):
+    alunos = int(input('Quantidade de alunos:'))
+    while alunos > 40:
+        alunos = int(input('MAXIMO DE 40 ALUNOS:'))       
+    quantidade_alunos.append(alunos)
+          
+media = sum(quantidade_alunos) / turmas
+print(f'A média por turma é de {media} alunos.')

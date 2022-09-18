@@ -1,0 +1,9 @@
+quantidade_eleitores = int(input('Digite a quantidade de eleitores: '))
+votos = []
+
+for i in range(quantidade_eleitores):
+    votos.append(int(input('Vote "1" Bolsonaro, "2" Ciro ou "3" Lula?:')))
+        
+print(f'Bolsonaro:{votos.count(1)}\nCiro:{votos.count(2)}\nLula:{votos.count(3)}')
+print(votos)
+

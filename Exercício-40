@@ -1,0 +1,41 @@
+codigo_cidade = []
+numero_veiculos = []
+numero_acidentes = []
+menos_2000_veiculos = []
+
+
+for i in range(5):
+    
+    print("\nCidade número ", i + 1)
+    cod_cidade = int(input("Digite o código da cidade: "))
+    while cod_cidade in codigo_cidade:
+        print("[Código já digitado]")
+        cod_cidade = int(input("Digite outro código: "))
+        
+
+    pergunta2 = int(input('Número de veículos de passeio:'))
+    pergunta3 = int(input('Número de acidentes de trânsito com vítimas:'))
+    codigo_cidade.append(cod_cidade)
+    numero_veiculos.append(pergunta2)
+ 
+    
+    if pergunta2 <= 2000:
+        menos_2000_veiculos.append(pergunta3)
+        numero_acidentes.append(pergunta3)
+    else:
+        numero_acidentes.append(pergunta3)
+        
+ 
+
+maior_num_veiculos = numero_veiculos.index(max(numero_veiculos))
+menor_num_veiculos = numero_veiculos.index(min(numero_veiculos))
+maior_indice_acidentes = numero_acidentes.index(max(numero_acidentes))
+menor_indice_acidentes = numero_acidentes.index(min(numero_acidentes))                          #Função index utilizada para pegar o codigo dos elemetos da lista codigos_clientes
+
+print('~' * 50)
+print(f'O maior indice de acidente é {max(numero_acidentes)} da cidade:{codigo_cidade[maior_indice_acidentes]}')
+print(f'O menor indice de acidente é {min(numero_acidentes)} da cidade:{codigo_cidade[menor_indice_acidentes]}')
+print(f"Média de veiculos das cidades: {sum(numero_veiculos) / len(numero_veiculos)}")
+print(f"Média de acidentes cidades com <= 2000 veiculos: {(sum(menos_2000_veiculos)) / len(menos_2000_veiculos)}")
+print('~' * 50)
+

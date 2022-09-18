@@ -1,0 +1,8 @@
+quantidade = int(input('Quantos Cds:'))
+valor = []
+
+for i in range(quantidade):
+    valor.append(int(input('Valor CD:')))
+          
+media = sum(valor) / quantidade
+print(f'O valor médio gasto em cada CD é de R${media}')

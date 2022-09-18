@@ -1,0 +1,10 @@
+popa,popb,anos= 80000 , 200000 , 0
+taxa_crescimento_a,taxa_crescimento_b = 0.03 , 0.015
+
+while popa < popb:
+    anos += 1   
+    popa = popa + (popa * taxa_crescimento_a)
+    popb = popb + (popb * taxa_crescimento_b)
+    
+print (f'Demorou {anos} anos para que a população da cidade A chegar a população da cidade B')
+print(f'Cidade A com {popa} habitantes\nCidade B com {popb} habitantes ')

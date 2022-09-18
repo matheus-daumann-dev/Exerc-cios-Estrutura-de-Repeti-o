@@ -1,0 +1,30 @@
+codigo_clientes = []
+altura = []
+peso = []
+quantidade_clientes = 1
+pergunta1 = True
+
+while pergunta1 != 0:
+    pergunta1 = int(input('Digite seu codigo:'))
+    if pergunta1 == 0:
+        break
+    else:
+        pergunta2 = float(input('Digite sua altura:'))
+        pergunta3 = float(input('Digite seu peso:'))
+        quantidade_clientes +=1
+        codigo_clientes.append(pergunta1)
+        altura.append(pergunta2)
+        peso.append(pergunta3)
+    
+    
+codigo_alto = altura.index(max(altura))
+codigo_baixo = altura.index(min(altura))               
+codigo_magro = peso.index(min(peso))
+codigo_gordo = peso.index(max(peso))
+print(f'Codigo do mais alto:{codigo_clientes[codigo_alto]}|Altura:{max(altura)}')
+print(f'Codigo do mais baixo:{codigo_clientes[codigo_baixo]}|Altura:{min(altura)}')
+print(f"Média de altura:{sum(altura) / len(altura)}")
+print(f'Codigo do mais gordo:{codigo_clientes[codigo_gordo]}|Altura:{max(peso)}')
+print(f'Codigo do mais magro:{codigo_clientes[codigo_magro]}|Altura:{min(peso)}')
+print(f"Média de peso:{sum(peso) / len(peso)} ")
+    

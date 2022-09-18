@@ -1,0 +1,27 @@
+while True:
+    
+    popa = int(input('Digite a população da cidade A:'))
+    if popa <= 0:
+        popa = int(input('Digite a população da cidade A:'))        
+    taxa_crescimento_a = float(input ('Qual a taxa de crescimento cidade A:'))
+        
+    popb = int(input('Digite a população da cidade B:'))
+    if popb <= 0:
+        popb = int(input('Digite a população da cidade B:'))    
+    taxa_crescimento_b = float(input ('Qual a taxa de crescimento cidade B:'))
+    anos = 0
+
+    while popa < popb:
+        anos += 1   
+        popa = popa + (popa * taxa_crescimento_a)
+        popb = popb + (popb * taxa_crescimento_b)
+
+    
+    print (f'Demorou {anos} anos para que a população da cidade A chegar a população da cidade B')
+    print(f'Cidade A com {popa} habitantes\nCidade B com {popb} habitantes ')     
+    
+    
+    if 'NAO' == str.upper(input('Você deseja deseja repetir a operação? DIGITE SIM OU NÃO?:').replace('Ã','A')):
+        break
+
+        

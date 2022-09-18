@@ -1,0 +1,22 @@
+Quantidade_pessoas = int(input('Quantas pessoas na turma?:'))
+count = 0
+idades = []
+
+
+while count < Quantidade_pessoas:
+    idades.append(int(input('Qual a idade?:')))
+    count +=1
+
+soma = sum(idades) / Quantidade_pessoas
+print(f'A média é : {soma}')
+
+
+if soma <= 25:
+    print(f'A turma é JOVEM')
+    
+elif soma <= 60:
+    print(f'A turma é ADULTA')
+    
+else:
+    soma >= 60
+    print(f'A turma é IDOSA')

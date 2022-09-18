@@ -1,0 +1,24 @@
+print('-'*15)
+print('Série Fibonacci')
+print('-'*15)
+
+
+termo1 = 0
+termo2 = 1
+print('*'*100)
+print(f'{termo1} -> {termo2}',end=' ')
+
+cont=3
+
+while cont >= 0:
+    termo3 = termo1 + termo2
+    print(f'->{termo3}',end=' ')
+    termo1 = termo2
+    termo2 = termo3
+    cont +=1
+    if termo3 >= 501:
+        break
+    
+    
+print('.FIM')   
+print('*'*100)

@@ -1,0 +1,20 @@
+produtos = int(input('Quantos produtos:'))
+while produtos > 50:
+    produtos = int(input('Digite no maximo 50 produtos:'))
+    
+    
+precos = []
+num_produtos = 1
+count = 0
+
+for i in range(produtos):
+    print(f'N°{num_produtos} - ')
+    precos.append(float(input('Digite o preço do produto:')))
+    num_produtos +=1
+    
+print('Lojas Quase Dois - Tabela de preços')
+num_produtos = 1
+for j in range(produtos):
+    print(f'N°{num_produtos} = R${precos[count]}')
+    count += 1
+    num_produtos += 1

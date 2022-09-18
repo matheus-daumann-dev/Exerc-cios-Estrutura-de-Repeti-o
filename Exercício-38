@@ -1,0 +1,6 @@
+salario = float(input("Digite o salário inicial do funcionario: "))
+ano = 1996
+while ano <= 2022:
+    salario *= 1.015
+    ano += 1
+print(f'O salário altual do ano {ano-1} é de: R${salario:.2f}')

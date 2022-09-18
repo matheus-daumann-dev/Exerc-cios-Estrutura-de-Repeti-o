@@ -1,0 +1,15 @@
+numero = int(input('Digite um número inteiro:'))
+divisoes = 1
+print(f'Números primos de 1 a {numero}:')
+
+
+for i in range(numero):    
+    if i > 1: 
+        for j in range(2,i):
+            if (i % j == 0) :
+                divisoes +=1 
+                break
+        else:
+            print(f'{i}',end=' ')
+            
+print(f'\nForam feitas {divisoes} divisões, para chegar a esses numeros.')

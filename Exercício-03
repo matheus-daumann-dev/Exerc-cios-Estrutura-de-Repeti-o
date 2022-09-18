@@ -1,0 +1,36 @@
+nome = str(input('Digite seu nome: '))
+idade = int(input('Digite sua idade: '))
+salario = float(input('Digite seu salário: '))
+sexo = str.upper(input('Sexo "F" para Feminino ou "M" para Masculino: '))
+estado_civil = str.upper(input('"S" para Solteiro, "C" para Casado, "V" para Viuvo e "D" para Divorciado: '))
+
+
+while len(nome) <= 3:
+    nome = str(input('Digite seu nome novamente: '))
+else:
+    pass
+
+while (idade < 0) and (idade > 150):
+    idade = int(input('Digite sua idade novamente: '))
+else:
+    pass
+
+while salario < 1 :
+    salario = float(input('Digite seu sálario novamente: '))  
+else:
+    pass
+    
+while (sexo != "F") and (sexo != "M"):
+    sexo = str.upper(input('Sexo "F" para Feminino ou "M" para Masculino novamente: '))
+else:
+    pass
+    
+while (estado_civil != "S") and (estado_civil != "C") and (estado_civil != "V") and (estado_civil != "D"):
+    estado_civil = str.upper(input('"S" para Solteiro, "C" para Casado, "V" para Viuvo e "D" para Divorciado novamente: '))
+else:
+    pass
+    
+    
+    
+print (f'Nome: {nome}\nIdade: {idade}\nSalário: {salario}\nSexo: {sexo}\nEstado Civil: {estado_civil}')
+    

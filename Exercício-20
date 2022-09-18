@@ -1,0 +1,16 @@
+numero = int(input('Digite um número inteiro: '))
+count = numero
+fatorial = 1
+    
+while numero >= 17 or numero < 0:
+    numero = int(input('Digite um número inteiro até 16:'))
+else:        
+    print(f'{numero}!=',end=' ')
+    while count > 0 :
+        print(f'{count}',end=' ')
+        print('.' if count > 1 else '=',end=' ' )
+        fatorial *= count
+        count -=1
+    
+    print (f'{fatorial}')
+

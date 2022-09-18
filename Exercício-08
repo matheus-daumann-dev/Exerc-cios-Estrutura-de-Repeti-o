@@ -1,0 +1,10 @@
+numeros = []
+for num in range(1, 6):
+    numeros.append (int(input("Digite um nÃºmero: ")))
+
+somanumeros = sum(numeros)
+media = somanumeros / 5
+
+print (f'A soma dos numeros é:{somanumeros} e a média é: {media}')
+        
+

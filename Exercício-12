@@ -1,0 +1,5 @@
+numeros = int(input('Digite um numero para fazer a multiplicação:'))
+
+for num in range(1,11):
+    print(f'{numeros}X{num} = {numeros*num}')
+    

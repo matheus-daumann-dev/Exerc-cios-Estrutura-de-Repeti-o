@@ -1,0 +1,14 @@
+numero1=int(input('Digite um numero inteiro:'))
+numero2=int(input('Digite um numero inteiro:'))
+
+if numero1 > numero2:
+    for num in range(numero2+1,numero1):
+        print(num,end=',')
+        
+
+elif numero1 < numero2:
+    for num in range(numero1+1,numero2):
+        print(num,end=',')
+               
+else:
+    print(f'Os numeros são iguais')

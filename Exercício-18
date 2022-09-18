@@ -1,0 +1,8 @@
+numeros=[]
+
+for num in range(10):
+    numeros.append (int(input('Digite um número: ')))
+    somanumeros = sum(numeros)
+    
+print(f'Maior valor: {max(numeros)}\nMenor valor: {min(numeros)}\nSoma dos valores: {somanumeros} ')
+    
