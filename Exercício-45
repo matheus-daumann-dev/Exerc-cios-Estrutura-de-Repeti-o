@@ -1,0 +1,36 @@
+gabarito = []
+r_alunos = []
+notas_alunos = []
+
+print('~'*50)
+print(f'Gabarito:')
+for i in range(10):
+    r_gabarito = str(input(f'Digite a resposta do exercício N°{i+1}: '))
+    gabarito.append(r_gabarito)
+
+numero_aluno = 1
+continua = True
+print('~'*50)
+while continua != "n":
+    print(f'Aluno n°{numero_aluno}:')
+    r_alunos.clear()
+
+
+    for i in range(10):
+        r_gabarito = str(input(f'Digite a resposta do exercício N°{i+1}: '))
+        r_alunos.append(r_gabarito)
+    print('~'*50)
+    nota = 0
+    for i in range(10):
+        if r_alunos == gabarito:
+            nota +=1  
+    notas_alunos.append(nota)
+    continua = str(input('Outro aluno vai verificar a nota?[s/n]: '))
+    print('~'*50)
+    numero_aluno += 1
+
+print('-'*50)
+print(f'A maior nota: {(max(notas_alunos))}')
+print(f'A menor nota: {(min(notas_alunos))}')
+print(f'A media de notas: {(sum(notas_alunos) / len(notas_alunos))}')
+print('-'*50)

@@ -1,0 +1,28 @@
+notas = []
+
+numero_atleta = 1
+atleta = True
+print('~'*50)
+while atleta != '':
+    atleta = str(input('Atleta:'))
+    if atleta == '':
+        break
+    else:
+        for i in range(7):
+            nota = float(input(f'Nota N°{i+1}: '))
+            notas.append(nota)
+            
+        print('~'*50)       
+        print('Resultado Final:')
+        print(f'Atleta:{atleta}')
+        print(f'Melhor nota:{max(notas)}')
+        print(f'Pior nota:{min(notas)}')
+        
+        notas.remove(max(notas))
+        notas.remove(min(notas))
+        media = sum(notas) / len(notas)
+        
+        print(f'Média:{round(media, 2)}')
+        numero_atleta +=1
+        print('~'*50)
+

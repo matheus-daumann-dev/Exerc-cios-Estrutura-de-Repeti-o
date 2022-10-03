@@ -1,0 +1,46 @@
+codigos = [100, 101, 102, 103, 104, 105]
+pedido = 1
+pedidos=True
+valor = []
+cod_pedidos = []
+
+
+while pedidos != 0:
+    print(f'Pedido n° {pedido}')
+    pedidos = int(input('Digite o código do pedido: '))
+    quantidade = int(input('Digite a quantidade: '))
+    pedido += 1
+    cod_pedidos.append(pedidos)
+    if pedidos == 0 or pedidos not in codigos:
+        print('Pedido encerrado.')
+        break
+    elif pedidos == 100:
+            conta = 1.20 * quantidade
+            valor.append(conta)
+    
+    elif pedidos == 101:
+        conta = (1.30 * quantidade)
+        valor.append(conta)
+        
+    elif pedidos == 102:
+        conta = (1.50 * quantidade)
+        valor.append(conta)
+        
+    elif pedidos == 103:
+        conta = 1.20 * quantidade
+        valor.append(conta)
+    
+    elif pedidos == 104:
+        conta = 1.30 * quantidade
+        valor.append(conta)
+            
+    else:
+        pedidos == 105
+        conta = 1.00 * quantidade
+        valor.append(conta)
+        
+
+cod_pedidos.pop()
+print(f'Codigo Pedidos: "{cod_pedidos}')
+print(f'Valor pedidos: R${valor}')
+print(f'Total valor: R${sum(valor)}')

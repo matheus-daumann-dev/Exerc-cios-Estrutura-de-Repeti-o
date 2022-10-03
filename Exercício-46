@@ -1,0 +1,29 @@
+distancia = []
+
+numero_atleta = 1
+atleta = True
+print('~'*50)
+while atleta != '':
+    atleta = str(input('Digite o nome do atleta:'))
+    if atleta == '':
+        break
+    else:
+        for i in range(5):
+            distancia_salto = float(input(f'Salto N°{i+1}: '))
+            distancia.append(distancia_salto)
+            
+        print('-'*50)
+        print(f'Atleta:{atleta}\n')
+        print(f'Primeiro Salto:{distancia[0]}\nSegundo Salto:{distancia[1]}\nTerceiro Salto:{distancia[2]}\nQuarto Salto:{distancia[3]}\nQuinto Salto:{distancia[4]}\n')
+        print(f'Melhor Salto:{max(distancia)}')
+        print(f'Pior Salto:{min(distancia)}\n')
+        
+        distancia.remove(max(distancia))
+        distancia.remove(min(distancia))
+        media = sum(distancia) / len(distancia)
+        
+        print(f'Média dos demais saltos:{round(media, 2)}')
+        print(f'Resultado Final:\n{atleta}: {round(media, 2)}')
+        numero_atleta +=1
+        print('-'*50)
+        print('~'*50)

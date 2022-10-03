@@ -1,0 +1,23 @@
+numeros25 = []
+numeros50 = []
+numeros75 = []
+numeros100 = []
+numeros = True
+
+while numeros > -1:
+    numeros=int(input('Digite um número:'))
+
+    if numeros > 0 and numeros <= 25:
+        numeros25.append(numeros)
+
+    elif numeros >= 26 and numeros <= 50:
+        numeros50.append(numeros)
+        
+    elif numeros >= 51 and numeros <= 75:
+        numeros75.append(numeros)
+        
+    elif numeros >= 76 and numeros <= 100:
+        numeros100.append(numeros)
+        
+        
+print(f'[0, 25]:{len(numeros25)}\n[26, 50]:{len(numeros50)}\n[51, 75]:{len(numeros75)}\n[76, 100]:{len(numeros100)}')

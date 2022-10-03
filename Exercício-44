@@ -1,0 +1,23 @@
+codigos = [1,2,3,4,5,6]
+quantidade_votos = -1
+votos=True
+resultado_votos = []
+print('Vote com os códigos:1 - Ana|2 - João|3 - José|4 - Maria|5 - VOTO NULO|6 - VOTO EM BRANCO')
+
+while votos != 0:
+    votos = int(input('Digite o código do seu voto: '))
+    quantidade_votos += 1
+    resultado_votos.append(votos)
+    if votos == 0 or votos not in codigos:
+        print('Eleição encerrada.')
+        break
+    
+        
+porcetagem_nulos = (resultado_votos.count(5) / quantidade_votos ) * 100
+porcetagem_branco = (resultado_votos.count(6) / quantidade_votos) * 100
+print('~'*50)
+print(f'Total de votos para cada candidato\nAna:  {resultado_votos.count(1)}\nJoão: {resultado_votos.count(2)}\nJosé: {resultado_votos.count(3)}\nMaria:{resultado_votos.count(4)}')
+print(f'Total de votos NULOS: {resultado_votos.count(5)}\nTotal de votos EM BRANCO: {resultado_votos.count(6)}')
+print(f'Porcentagem de votos NULOS:{round(porcetagem_nulos,2)}%')
+print(f'Porcentagem de votos EM BRANCO:{round(porcetagem_branco,2)}%')
+print('~'*50)
